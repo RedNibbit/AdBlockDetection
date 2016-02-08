@@ -7,21 +7,20 @@
 <body>
 <h1>Mini Advertising test implementation</h1>
 
-<div id="image"></div>
+<!--<div id="image"></div>--> <!--empty pixel placeholder--> 
 <div id="message"></div>
 
 <script type="text/javascript">
 src="advert.js"
 if (document.getElementById("tester") == undefined) 
 { 
-var elem = document.createElement("img");
-					elem.setAttribute("height", "0");
-					elem.setAttribute("width", "0");
-					elem.src = 'imgurl'
-					document.getElementById("image").innerHTML = "";
-					document.getElementById("image").appendChild(elem);
-					document.getElementById("message").innerHTML = "Adblocker is Active";
-					return false;
+//var elem = document.createElement("img"); //empty pixel
+	//elem.setAttribute("height", "0"); //empty pixel formatting
+	//elem.setAttribute("width", "0"); //empty pixel formatting
+	//elem.src = 'imgurl' //empty pixel URL
+	//document.getElementById("image").innerHTML = "";
+	//document.getElementById("image").appendChild(elem);
+	document.getElementById("message").innerHTML = "Adblocker is Active";
 	}
 	else { 
 	document.getElementById("message").innerHTML = "Adblocker isn't Active";
