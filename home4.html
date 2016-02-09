@@ -7,15 +7,15 @@
 <body>
 <h1>Mini Advertising test implementation</h1>
     <script>
-      if( window.canRunAds == undefined ){
+      if(window.canRunAds == undefined ){
         // adblocker detected
         document.write('Dear me - adblocker is active');
-        break;
+       // break;
 }
-      if( window.canRunAds != undefined ){
+      if(window.canRunAds != undefined ){
         // adblocker not detected
         document.write('Dear me - adblocker is in-active');
-        return false;
+      //  return false;
 }
     </script>
   </body>
