@@ -12,7 +12,7 @@
 
 <script type="text/javascript">
 src="advert.js"
-
+{
 if (document.getElementById("tester") == undefined) 
 { 
 //var elem = document.createElement("img"); //empty pixel
@@ -22,11 +22,13 @@ if (document.getElementById("tester") == undefined)
 	//document.getElementById("image").innerHTML = "";
 	//document.getElementById("image").appendChild(elem);
 	document.getElementById("message").innerHTML = "Adblocker is Active";
-	}
+	return false;
+}
 	else { 
 	document.getElementById("message").innerHTML = "Adblocker isn't Active";
+	return false;
 	}
-
+}
 </script>
  
 </body>
